@@ -68,3 +68,6 @@ console.log(factroialNum(5));
 
 
 
+
+
+
