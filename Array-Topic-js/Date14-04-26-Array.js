@@ -1,7 +1,6 @@
 // what is Array or Define Array //
 
 
-
 //  A JavaScript Array is a special object used to store multiple values in a single variable.
 //   These values can be of any type(number, string, object, function, etc.).
 
