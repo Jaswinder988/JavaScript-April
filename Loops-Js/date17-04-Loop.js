@@ -170,12 +170,75 @@ const carNames = {
 }
 
 for (let key in carNames) {
-    console.log(key , carNames[key]);
-    
+    console.log(key, ":", carNames[key]);
+
+}
+
+// Using for in object loop forIn Or forOf
+
+// First Example :  For Of 
+
+const us = {
+    name: "Preet",
+    Age: 26
+}
+
+for (let val of Object.keys(us)) {
+    console.log(val);
+
+}
+
+// Second Using in Entries
+
+const score = {
+    over: 20,
+    score: 240
+}
+
+for (let [key, val] of Object.entries(score)) {
+    console.log(key, "=", val);
+
+}
+
+//  🔷 PART A — for...in Object Tasks
+
+// ✅ Solved Task 1  Print all keys and values
+
+const student = {
+    Name: "Aman",
+    Marks: 90,
+    Class: "BCA"
+}
+
+for (let key in student) {
+    console.log(key, ":> ", student[key]);
+}
+
+// 🔷 PART B — for...of with Object.values()
+
+// ✅ Solved Task 2 : Print object values using for...of
+
+
+const marks = {
+    English: 90,
+    Hindi: 78,
+    Punjabi: 99,
+    Math: 68,
+    History: 88
+}
+
+for (let [key, value] of Object.entries(marks)) {
+    console.log(key, ": ", value);
+
 }
 
 
+//  🔷 PART c — map with Object.values()
+const mobile = {
+    brand: "Apple",
+    model: "iPhone"
+};
 
+const uppCase = Object.values(mobile).map(name => name.toUpperCase());
 
-
-
+console.log(uppCase);
