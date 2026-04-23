@@ -83,7 +83,7 @@ const user4 = {
 
 Object.freeze(user4);
 
-user2.name = "Ram"
+user4.name = "Ram"
 console.log(user4.name);
 
 // Practice Object Freeze
